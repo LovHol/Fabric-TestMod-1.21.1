@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "Test Mod",
+	"description": "This is a test mod!",
+	"authors": [
+		"Love Holmberg (Hollowed Maker)"
+	],
+	"contact": {
+		"homepage": "https://lovhol.github.io/index.html",
+		"sources": "https://github.com/LovHol/Fabric-TestMod-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lovhol.testmod.TestMod"
+		],
+		"fabric-datagen": [
+			"net.lovhol.testmod.TestModDataGenerator"
+		],
+		"client": [
+			"net.lovhol.testmod.TestModClient"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
